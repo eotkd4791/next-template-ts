@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`style test suite snapshot 1`] = `
+.emotion-0 {
+  color: red;
+}
+
+<h1
+  class="emotion-0"
+>
+  헤딩
+</h1>
+`;
