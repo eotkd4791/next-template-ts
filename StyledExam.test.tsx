@@ -1,7 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import { matchers } from "@emotion/jest";
+import { matchers, createSerializer } from "@emotion/jest";
 import StyledExam from "./StyledExam";
 
+expect.addSnapshotSerializer(createSerializer());
 expect.extend(matchers);
 
 describe("style test suite", () => {

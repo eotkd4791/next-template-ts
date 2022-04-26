@@ -1,15 +1,7 @@
-import nextJest from "next/jest";
-
-const createJestConfig = nextJest({
-  dir: "./",
-});
-
-const customJestConfig = {
+export default {
   moduleDirectories: ["node_modules", "<rootDir>/"],
-  setupFilesAfterEnv: ["<rootDir>/setupTests.ts"],
+  setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
   snapshotSerializers: ["@emotion/jest/serializer"],
   testEnvironment: "jsdom",
   verbose: true,
 };
-
-export default createJestConfig(customJestConfig);
