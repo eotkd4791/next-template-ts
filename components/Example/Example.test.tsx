@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Example from "./Example";
+import Example from ".";
 
 describe("test suite", () => {
   test("exam", () => {
